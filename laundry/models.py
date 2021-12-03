@@ -48,5 +48,4 @@ class GLaundry(models.Model):
         return f"{self.student.name}"
 
     def get_fields(self):
-        if fields != id:
-            return [(field.name, field.value_to_string(self)) for field in GLaundry._meta.fields]
+        return [(field.name, field.value_to_string(self)) for field in GLaundry._meta.fields]
